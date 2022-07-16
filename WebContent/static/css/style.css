@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+
+.background-walk-y {
+    background-repeat: no-repeat;
+    background-position: 0 0%;
+    -webkit-animation-name: backgroundWalkY;
+    animation-name: backgroundWalkY;
+    -webkit-animation-duration: 70s;
+    animation-duration: 70s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    background-size: 100%;
+}
+
+@media (max-width: 1199.98px) {
+    .background-walk-y {
+        background-size: cover;
+    }
+}
+
+.background-walk-x {
+    background-repeat: no-repeat;
+    background-position: 0 0%;
+    -webkit-animation-name: backgroundWalkX;
+    animation-name: backgroundWalkX;
+    -webkit-animation-duration: 70s;
+    animation-duration: 70s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes backgroundWalkY {
+    0% {
+        background-position: 0 0%;
+    }
+
+    100% {
+        background-position: 0 100%;
+    }
+}
+
+@keyframes backgroundWalkY {
+    0% {
+        background-position: 0 0%;
+    }
+
+    100% {
+        background-position: 0 100%;
+    }
+}
+
+@-webkit-keyframes backgroundWalkX {
+    0% {
+        background-position: 0 0%;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes backgroundWalkX {
+    0% {
+        background-position: 0 0%;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.overlay-gradient-bottom:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: false;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.65) 100%);
+    z-index: 1;
+}
